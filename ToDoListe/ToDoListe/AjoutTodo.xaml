@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoListe.AjoutTodo"
+             Title="Add">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AddConfirm" Text ="Save" />
+    </ContentPage.ToolbarItems>
+     
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Nom de la tâche" FontSize="20" FontAttributes="Bold"/>
+            <Entry x:Name="txtNom" Placeholder="Nom de la tâche" Margin="0,0,7,20"/>
+            <Label Text="Description" FontSize="20" FontAttributes="Bold"/>
+            <Entry x:Name="txtDesc" Placeholder="Description" Margin="0,0,7,0"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

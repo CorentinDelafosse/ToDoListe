@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoListe.MainPage"
+             Title="To do">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AddTodo" Text ="Add"/>
+    </ContentPage.ToolbarItems>
+    <ScrollView Padding="0,0,0,30">
+        <StackLayout>
+            <Frame BackgroundColor="#303030" Padding="24" CornerRadius="0" Margin="0,0,0,10">
+                <Label Text="To do Liste" HorizontalTextAlignment="Center"  TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Button Text="Tout Supprimer" x:Name="SuppTodo" BackgroundColor="Gold" FontAttributes="Bold" Padding="10,0,10,0" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,20"/>
+
+            <ListView x:Name="TodoListe"
+                      ItemSelected="OnItemSelected"
+                      HasUnevenRows="True"
+                      SelectionMode="Single"
+                      SeparatorColor="#404040"/>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>
+
